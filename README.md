@@ -89,6 +89,16 @@ task_manager/
 | All        | `/panel/login/`, `/panel/logout/` | Login/Logout |
 
 ---
+## 🖼️ Screenshots
+
+### 📊 SuperAdmin Dashboard
+![SuperAdmin Dashboard](docs/superadmin_dashboard.png)
+
+### 👨‍💼 Admin Dashboard
+![Admin Dashboard](docs/admin_dashboard.png)
+
+### 👤 User Tasks
+![User Task List](docs/user_tasks.png)
 
 ## 🔒 Role Permissions
 
