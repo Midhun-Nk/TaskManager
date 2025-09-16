@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     
     'accounts',
     'tasks',
+    'admin_panel',
+
 ]
 AUTH_USER_MODEL = 'accounts.User'  
 

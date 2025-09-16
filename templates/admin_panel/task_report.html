@@ -1,0 +1,15 @@
+{% extends "admin_panel/base.html" %}
+{% block title %}Task Report{% endblock %}
+{% block content %}
+<h2>Report for: {{ task.title }}</h2>
+<p><strong>Assigned to:</strong> {{ task.assigned_to.username }}</p>
+<p><strong>Status:</strong> {{ task.status }}</p>
+{% if task.status == 'COMPLETED' %}
+  <p><strong>Completion Report:</strong></p>
+  <div class="border p-3 mb-3">{{ task.completion_report|linebreaks }}</div>
+  <p><strong>Worked Hours:</strong> {{ task.worked_hours }}</p>
+  <p><strong>Completed at:</strong> {{ task.updated_at }}</p>
+{% else %}
+  <p class="text-warning">Task not completed yet.</p>
+{% endif %}
+{% endblock %}
