@@ -90,6 +90,25 @@ task_manager/
 
 ---
 
+## 🔒 Role Permissions
+
+| Action                        | SuperAdmin | Admin | User |
+|-------------------------------|:----------:|:-----:|:----:|
+| Login to panel                | ✅         | ✅    | ✅   |
+| View own tasks                | ✅         | ✅    | ✅   |
+| Mark task as completed        | ❌         | ❌    | ✅   |
+| View task reports             | ✅         | ✅    | ❌   |
+| Create / edit / delete tasks  | ✅         | ✅    | ❌   |
+| View all tasks                | ✅         | ✅    | ❌   |
+| Create new user               | ✅         | ❌    | ❌   |
+| Delete user                   | ✅         | ❌    | ❌   |
+| Assign users to Admin         | ✅         | ❌    | ❌   |
+| Export completed task reports | ✅         | ❌    | ❌   |
+
+✅ = Allowed  
+❌ = Not Allowed
+
+
 ## 🛠️ Setup & Installation
 
 ```bash
@@ -111,3 +130,4 @@ python manage.py migrate
 # Create SuperAdmin
 python manage.py createsuperuser
 # (then edit user in /admin/ or via DB to set role=SUPERADMIN)
+
